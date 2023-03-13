@@ -266,13 +266,12 @@ button {
 
 .benefits {
     display: flex;
-    flex-flow: column;
-    row-gap: 1.0rem;
+    margin: 1rem 1rem;
+    flex-direction: column;
     align-items: center;
     align-self: center;
-    justify-content: space-between;
     background-color: var(--white);
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .first {
