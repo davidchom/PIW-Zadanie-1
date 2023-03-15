@@ -265,8 +265,6 @@ button {
     background-position: right center;
 }
 
-.benefits {}
-
 .first-benefit {
     display: flex;
     margin: 1rem 1rem;
@@ -555,4 +553,60 @@ button {
     grid-column: 1/13;
     align-self: center;
     justify-self: center;
+    justify-content: center;
+}
+
+.login-title {
+    align-items: flex-end;
+    justify-self: center;
+    padding: 4rem;
+    background-image: url(/assets/dots\ hero\ section.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 15% 20%;
+
+}
+
+.login-text {
+    width: fit-content;
+}
+
+.p-login {
+    width: fit-content;
+    margin: auto;
+}
+
+.login-container {
+    grid-column: 1/7;
+    padding-top: 10rem;
+    display: grid;
+    flex-direction: column;
+}
+
+.login {
+    align-items: flex-end;
+    justify-self: center;
+    padding: 4rem;
+    justify-content: space-between;
+}
+
+.login-img-container {
+    grid-column: 7/13;
+    display: grid;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: flex-start;
+}
+
+.input-username {
+    grid-template-columns: max-content;
+    background: #FFFFFF;
+    border: 1px solid #98A9FF;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.forgot-password {
+    justify-content: space-between;
 }
