@@ -556,21 +556,6 @@ button {
     justify-content: center;
 }
 
-.login-title {
-    align-items: flex-end;
-    justify-self: center;
-    padding: 4rem;
-    background-image: url(/assets/dots\ hero\ section.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 15% 20%;
-
-}
-
-.login-text {
-    width: fit-content;
-}
-
 .p-login {
     width: fit-content;
     margin: auto;
@@ -578,16 +563,64 @@ button {
 
 .login-container {
     grid-column: 1/7;
-    padding-top: 10rem;
+    grid-row: 1/7;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
     display: grid;
     flex-direction: column;
 }
 
-.login {
-    align-items: flex-end;
+.login-title {
+    grid-column: 2/8;
+    grid-row: 2/3;
     justify-self: center;
-    padding: 4rem;
+    background-image: url(/assets/dots\ hero\ section.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.login-text {
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.login {
+    grid-column: 2/8;
+    grid-row: 3/6;
+    justify-self: center;
+}
+
+.data {
+    grid-column: 2/8;
+    justify-self: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-username {
+    background: #FFFFFF;
+    border: 1px solid #98A9FF;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.forgot-password {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.login-button {
+    grid-column: 2/8;
+    grid-row: 6/7;
+    justify-content: center;
+    justify-self: center;
 }
 
 .login-img-container {
@@ -596,17 +629,4 @@ button {
     flex-direction: column;
     row-gap: 2rem;
     justify-content: flex-start;
-}
-
-.input-username {
-    grid-template-columns: max-content;
-    background: #FFFFFF;
-    border: 1px solid #98A9FF;
-    border-radius: 4px;
-    margin-bottom: 2rem;
-    width: 100%;
-}
-
-.forgot-password {
-    justify-content: space-between;
 }
